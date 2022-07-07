@@ -36,6 +36,7 @@
                  </thead>
                  <tbody class="border-separate border border-green-900 my-10">
                      @foreach($listas as $lista)
+                    
                      @if($lista->user_id == Auth::id())
                      <tr class="">
                          <th class="border border-green-600 " scope="row">{{$loop->index+1}}</th>
